@@ -1,3 +1,3 @@
 # AuctionsWebsite
 
-Implementation of a Restful API for a auction website.
+Implementation of a Restful API for a auction website using Spring framework.
