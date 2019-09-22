@@ -1,0 +1,26 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <!-- Define persistence unit -->
+    <persistence-unit name="jcg-JPA">
+        <description>Hibernate EntityManager Demo</description>
+        <class>com.example.demo.Model.Employee</class>
+        <class>com.auction_app.Model.User</class>
+        <class>com.auction_app.Model.Seller</class>
+        <class>com.auction_app.Model.Bidder</class>
+        <class>com.auction_app.Model.Bid</class>
+        <class>com.auction_app.Model.Item</class>
+        <class>com.auction_app.Model.Category</class>
+        <class>com.auction_app.Model.BidId</class>
+        <class>com.auction_app.Model.Image</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testdb"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="kwstassrok7"/>
+        </properties>
+    </persistence-unit>
+</persistence>
