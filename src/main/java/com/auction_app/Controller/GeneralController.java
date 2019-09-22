@@ -520,10 +520,4 @@ public class GeneralController {
 	    }
     }
 
-	@RequestMapping(value = "/get_xml", method = RequestMethod.GET, produces = {"application/xml"})
-	public Item handle_get_xml() {
-		Item item =  itemRepository.findById(105).get();
-		System.out.println(item);
-		return item;
-	}
 }
